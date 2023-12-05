@@ -17,14 +17,16 @@
   },
   "startup": "application",
   "options": {
-	  "RTSP_PROTOCOLS": "tcp",
-	  "RTSP_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
-	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
+	  "MTX_PROTOCOLS": "tcp",
+	  "MTX_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
+	  "MTX_PATHS_ALL_RUNONDEMANDRESTART": "yes",
+	  "MTX_PATHS_CAM_SOURCE": "rpiCamera"
   },
   "schema": {
-	  "RTSP_PROTOCOLS": "list(tcp)",
-	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
-	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
+	  "MTX_PROTOCOLS": "list(tcp)",
+	  "MTX_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
+	  "MTX_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)",
+	  "MTX_PATHS_CAM_SOURCE": "list(rpiCamera)"
   },
-  "image": "bluenviron/mediamtx"
+  "image": "bluenviron/mediamtx:latest-rpi"
 }
